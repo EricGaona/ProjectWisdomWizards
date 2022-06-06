@@ -1,0 +1,443 @@
+
+body, html {
+    margin: 0;
+    padding: 0;   
+    background-color: #4285F4;
+    font-family: 'Open Sans', sans-serif;
+}
+    .container-header {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1170px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+
+h1 a {
+    color: #FFFFFF ;
+    text-decoration: none ;
+   
+}
+
+h1 a:hover {
+    color: #c0c0c0;
+    text-decoration: none ;
+  } 
+
+    header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #274E7F;
+    padding-bottom: 10px;  
+    z-index: 99;
+}
+
+.menu {
+    width: 100%;
+    background-color: #274E7F;
+    position: absolute;
+    left: 100%;
+    top: 45px;
+    border-top: 1px solid #1B375A;
+    transition: all 0.3s;
+    visibility: hidden;
+    z-index: 100;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.menu > li {
+    list-style: none;
+    padding: 5px;
+    margin-left: 0px;
+    margin-right: 10px;
+    list-style: none;
+    font-weight: bold;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #c0c0c0;
+    display: block;
+    /*   background-color: aqua;*/
+    font-weight: bold;
+}
+
+.menu ul li {
+    margin-left: 0px;
+    list-style: none;
+}
+
+
+.menu li:hover > a {
+    color: white;
+    /*    background-color: white;*/
+}
+
+.menu-click {
+    left: 0%;
+    transition: all .5s;
+    visibility: visible;
+    z-index: 100;
+}
+
+/*BURGUER */
+.burguer {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    top: 10px;
+    z-index: 120;
+}
+
+.burguer span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: white;
+    position: absolute;
+    transition: all 0.3s;
+}
+
+.burguer:hover span {
+    background: #c0c0c0;
+}
+
+.burguer span:nth-child(1) {
+    top: 0%;
+    margin-top: 1px;
+}
+
+.burguer span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.burguer span:nth-child(3) {
+    top: 100%;
+    margin-top: -4px;
+}
+
+.burguer-click {}
+
+.burguer-click span {
+    background: white;
+    transition: all 0.3s;
+    height: 4px;
+}
+
+.burguer-click span:nth-child(1) {
+    top: 50%;
+    transform: rotate(-45deg);
+    margin-top: -1px;
+}
+
+.burguer-click span:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.burguer-click span:nth-child(3) {
+    top: 50%;
+    margin-top: -1px;
+    transform: rotate(-135deg);
+}
+
+/*     XXXXXXXXXXXXXXXXXX              PRIMERA MEDIA SCREEN                   ___________*/
+
+@media (min-width: 768px) {
+
+
+    .burguer {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+        margin: 0px auto;
+        text-align: center;
+        padding-bottom: 0px;
+      }
+
+    .container-header {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1170px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    h1 {
+        padding: 12px 0 0;
+        margin: 0;
+        color: white;
+        font-size: 22px;
+
+    }
+
+    .menu {
+
+        position: static;
+        width: 100%;
+        visibility: visible;
+        font-size: 0px;
+        padding-top: 10px;
+        /*        margin-left: -40px;*/
+        padding-left: 0px;
+        border-top: 0px solid #274E7F;
+
+    }
+
+    .menu li {
+        display: inline-block;
+        position: relative;
+        margin: 0px 0px;
+        padding: 0px 0px 5px 0px;
+
+    }
+
+    .menu li a {
+        display: block;
+        width: 100%;
+        padding: 3px 5px;
+        margin: 0px 10px;
+        box-sizing: border-box;
+
+    }
+
+    .menu li:last-child a {
+        margin-right: 0px;
+    }
+}
+body, html {
+    margin: 0;
+    padding: 0;   
+    background-color: #4285F4;
+    font-family: 'Open Sans', sans-serif;
+}
+    .container-header {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1170px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+
+h1 a {
+    color: #FFFFFF ;
+    text-decoration: none ;
+   
+}
+
+h1 a:hover {
+    color: #c0c0c0;
+    text-decoration: none ;
+  } 
+
+    header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #274E7F;
+    padding-bottom: 10px;  
+    z-index: 99;
+}
+
+.menu {
+    width: 100%;
+    background-color: #274E7F;
+    position: absolute;
+    left: 100%;
+    top: 45px;
+    border-top: 1px solid #1B375A;
+    transition: all 0.3s;
+    visibility: hidden;
+    z-index: 100;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.menu > li {
+    list-style: none;
+    padding: 5px;
+    margin-left: 0px;
+    margin-right: 10px;
+    list-style: none;
+    font-weight: bold;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #c0c0c0;
+    display: block;
+    /*   background-color: aqua;*/
+    font-weight: bold;
+}
+
+.menu ul li {
+    margin-left: 0px;
+    list-style: none;
+}
+
+
+.menu li:hover > a {
+    color: white;
+    /*    background-color: white;*/
+}
+
+.menu-click {
+    left: 0%;
+    transition: all .5s;
+    visibility: visible;
+    z-index: 100;
+}
+
+/*BURGUER */
+.burguer {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    top: 10px;
+    z-index: 120;
+}
+
+.burguer span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: white;
+    position: absolute;
+    transition: all 0.3s;
+}
+
+.burguer:hover span {
+    background: #c0c0c0;
+}
+
+.burguer span:nth-child(1) {
+    top: 0%;
+    margin-top: 1px;
+}
+
+.burguer span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.burguer span:nth-child(3) {
+    top: 100%;
+    margin-top: -4px;
+}
+
+.burguer-click {}
+
+.burguer-click span {
+    background: white;
+    transition: all 0.3s;
+    height: 4px;
+}
+
+.burguer-click span:nth-child(1) {
+    top: 50%;
+    transform: rotate(-45deg);
+    margin-top: -1px;
+}
+
+.burguer-click span:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.burguer-click span:nth-child(3) {
+    top: 50%;
+    margin-top: -1px;
+    transform: rotate(-135deg);
+}
+
+/*     XXXXXXXXXXXXXXXXXX              PRIMERA MEDIA SCREEN                   ___________*/
+
+@media (min-width: 768px) {
+
+
+    .burguer {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+        margin: 0px auto;
+        text-align: center;
+        padding-bottom: 0px;
+      }
+
+    .container-header {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1170px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    h1 {
+        padding: 12px 0 0;
+        margin: 0;
+        color: white;
+        font-size: 22px;
+
+    }
+
+    .menu {
+
+        position: static;
+        width: 100%;
+        visibility: visible;
+        font-size: 0px;
+        padding-top: 10px;
+        /*        margin-left: -40px;*/
+        padding-left: 0px;
+        border-top: 0px solid #274E7F;
+
+    }
+
+    .menu li {
+        display: inline-block;
+        position: relative;
+        margin: 0px 0px;
+        padding: 0px 0px 5px 0px;
+
+    }
+
+    .menu li a {
+        display: block;
+        width: 100%;
+        padding: 3px 5px;
+        margin: 0px 10px;
+        box-sizing: border-box;
+
+    }
+
+    .menu li:last-child a {
+        margin-right: 0px;
+    }
+}
