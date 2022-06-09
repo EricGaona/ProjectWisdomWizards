@@ -372,6 +372,25 @@ h1 a:hover {
     margin-top: -1px;
     transform: rotate(-135deg);
 }
+/*     XXXXXXXXXXXXXXXXXX              FOOTER                 ___________*/
+
+footer{
+    background-color: #FFF;
+    padding: 10px 0;
+   
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+}
+#cenFoo{
+    width: 80%;
+    margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+  
+}
 
 /*     XXXXXXXXXXXXXXXXXX              PRIMERA MEDIA SCREEN                   ___________*/
 
@@ -441,3 +460,5 @@ h1 a:hover {
         margin-right: 0px;
     }
 }
+
+    
