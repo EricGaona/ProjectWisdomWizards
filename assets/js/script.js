@@ -7,8 +7,3 @@ $('.burguer').on('click',function(){
 		$('.menu').toggleClass('menu-click');
 });
 
-$('.menu a').on('click',function(){
-    
-		$('.burguer').toggleClass('burguer-click');
-		$('.menu').toggleClass('menu-click');
-});
