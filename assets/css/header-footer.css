@@ -374,7 +374,7 @@ h1 a:hover {
 
 footer{
     background-color: #FFF;
-    padding: 10px 0;
+    padding: 5px 0;
    
 }
 footer a{
@@ -457,6 +457,14 @@ footer a{
     .menu li:last-child a {
         margin-right: 0px;
     }
+
+    /*     XXXXXXXXXXXXXXXXXX              FOOTER                 ___________*/
+
+
+#cenFoo{
+    width: 30%;
+}
+
 }
 
     
